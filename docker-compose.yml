@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  grocery-prod:
+    container_name: grocery-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '2500:80'
